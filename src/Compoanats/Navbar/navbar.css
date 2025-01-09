@@ -1,0 +1,22 @@
+nav{
+    background:#2c3e50
+    ;
+  }
+  .NavLink {
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+  }
+  .NavLink.active {
+    color: black;
+    background-color: #1abc9c;
+    border-radius: 50px;
+  }
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+  

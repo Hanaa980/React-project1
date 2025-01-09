@@ -1,0 +1,49 @@
+.form .btn {
+  background-color: #1abc9c;
+  width: 150px;
+  padding: 10px;
+  &:active {
+    background-color: #2e655a;
+  }
+}
+
+.input-container {
+  position: relative;
+  margin: 20px 0;
+}
+
+.custom-input {
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.custom-input:focus {
+  border-color: #1abc9c;
+}
+
+.custom-input::placeholder {
+  color: #888;
+}
+
+.custom-label {
+  position: absolute;
+  top: 10px;
+  z-index: -1;
+  left: 15px;
+  font-size: 16px;
+  color: #888;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+
+.custom-input:not(:placeholder-shown) ~ .custom-label {
+  top: -25px;
+  left: 5px;
+  font-size: 14px;
+  color: #1abc9c;
+}
