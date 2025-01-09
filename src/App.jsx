@@ -7,26 +7,7 @@ import Contact from "./Compoanats/Contact/Contact";
 import NotFound from "./Compoanats/NotFound/NotFound";
 
 function App() {
-//   let x = createBrowserRouter([
-//     {
-//       path: "",
-//       element: <Layout />,
-//       children: [
-//         { index: true, element: <Home /> },
-//         { path: "about", element: <About /> },
-//         { path: "portfolio", element: <Portfolio /> },
-//         { path: "contact", element: <Contact /> },
-//         { path: "*", element: <NotFound /> },
-//       ]}
-     
-//   ],
-//   {
-//         basename:"React-project1"
-//   }
-
-// );
-let x = createBrowserRouter(
-  [
+  let x = createBrowserRouter([
     {
       path: "",
       element: <Layout />,
@@ -36,9 +17,15 @@ let x = createBrowserRouter(
         { path: "portfolio", element: <Portfolio /> },
         { path: "contact", element: <Contact /> },
         { path: "*", element: <NotFound /> },
-      ]},
-  ]
+      ]}
+     
+  ],
+  {
+        basename:"/React-project1"
+  }
+
 );
+
   return (
     <>
       <RouterProvider router={x}></RouterProvider>
