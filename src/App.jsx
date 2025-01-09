@@ -9,7 +9,7 @@ import NotFound from "./Compoanats/NotFound/NotFound";
 function App() {
   let x = createBrowserRouter([
     {
-      path: "",
+      path: "/React-project1",
       element: <Layout />,
       children: [
         { index: true, element: <Home /> },
@@ -19,10 +19,7 @@ function App() {
         { path: "*", element: <NotFound /> },
       ]}
      
-  ],
-  {
-        basename:"/React-project1"
-  }
+  ]
 
 );
 
